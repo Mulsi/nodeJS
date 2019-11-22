@@ -9,6 +9,10 @@ app.set('port', 3000)
 app.set('views', __dirname + "/views")
 app.set('view engine', 'ejs');
 
+app.get('/', (req, res) => {
+  res.write('Hello world')
+  res.end()
+})
 
 app.get(
   '/hello/:Miha', 
