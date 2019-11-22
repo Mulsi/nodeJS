@@ -13,7 +13,6 @@ app.set('view engine', 'ejs');
 app.get(
   '/hello/:Miha', 
   (req, res) => res.render('hello.ejs', {name: req.params.name})
-  
   )
 
 app.get('/metrics.json', (req, res) => {
